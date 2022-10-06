@@ -10829,21 +10829,31 @@ textarea.form-control-lg {
 }
 
 aside {
-  position: absolute;
-  top: 0;
-  padding-top: 13px;
+  position: fixed;
+  top: 13px;
+  padding: 13px 0;
   background: #ffffff;
   border-radius: 4px 4px 0 0;
   height: calc(100vh - 10px);
 }
 aside span {
-  display: block;
-  padding: 10px 10px 10px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
   color: #656565;
   position: relative;
   text-align: center;
+  font: 14px/18px Helvetica, Arial, sans-serif;
+}
+aside span .fa-solid {
+  display: inline-flex;
+  font-size: 25px;
+}
+aside nav {
+  padding: 0;
 }
 
 /*!
@@ -19102,6 +19112,11 @@ Content
 ========================================================================== */
 .app-loading {
   display: none;
+}
+
+section {
+  width: 1200px;
+  margin: 50px auto 0;
 }
 
 /* ==========================================================================
